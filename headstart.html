@@ -15,12 +15,15 @@
 	<a-asset-item id="car3-mtl" src="audi-r8-red.mtl" dynamic-body></a-asset-item>
          <a-asset-item id="car4" src="audi-r8-red.obj" dynamic-body></a-asset-item>
 	<a-asset-item id="car4-mtl" src="audi-r8-red.mtl" dynamic-body></a-asset-item>
+        <a-asset-item id="building" src="city.obj" dynamic-body></a-asset-item>
+        <a-asset-item id="building-mtl" src="city.mtl" dynamic-body></a-asset-item>
+        
  </a-assets>
 <a-entity>
-<a-text value="lamborghini" color="white" width="15" position="21.23 3.5 -21.23" align="center"></a-text>
-<a-text value="cost:6,00,000" color="red" width="10" position="21.23 3 -21.23" align="center"></a-text>
-<a-text value="mileage:10" color="red" width="10" position="21.23 2.5 -21.23" align="center"></a-text>
-<a-entity obj-model="obj:#car1;mtl:#car1-mtl" size="2" position="21.23 0 -21.23" rotation="0 45 0" color="#4CC3D9"><a-animation
+<a-text value="lamborghini" color="white" width="15" position="9.5 3.5 -9.5" align="center"></a-text>
+<a-text value="cost:6CR" color="red" width="10" position="9.5 3 -9.5" align="center"></a-text>
+<a-text value="mileage:10" color="red" width="10" position="9.5 2.5 -9.5" align="center"></a-text>
+<a-entity obj-model="obj:#car1;mtl:#car1-mtl" size="2" position="9.5 -0.02 -9.5" rotation="0 45 0" color="#4CC3D9"><a-animation
     attribute="rotation"
      dur="10000"
      fill="forwards"
@@ -28,10 +31,10 @@
      repeat="indefinite"
      easing="linear"
    ></a-animation></a-entity>
-<a-text value="aventador" color="white" width="15" position="-21.23 3.5 21.23" align="center"></a-text>
-<a-text value="cost:7,00,000" color="red" width="10" position="-21.23 3 21.23" align="center"></a-text>
-<a-text value="mileage:15" color="red" width="10" position="-21.23 2.5 21.23" align="center"></a-text>
-<a-entity obj-model="obj:#car2;mtl:#car2-mtl" size="2" position="-21.23 0 21.23" rotation="0 45 0" color="#4CC3D9"><a-animation
+<a-text value="aventador" color="white" width="15" position="-9.5 3.5 9.5" align="center"></a-text>
+<a-text value="cost:7CR" color="red" width="10" position="-9.5 3 9.5" align="center"></a-text>
+<a-text value="mileage:15" color="red" width="10" position="-9.5 2.5 9.5" align="center"></a-text>
+<a-entity obj-model="obj:#car2;mtl:#car2-mtl" size="2" position="-9.5 -0.02 9.5" rotation="0 45 0" color="#4CC3D9"><a-animation
     attribute="rotation"
      dur="10000"
      fill="forwards"
@@ -40,10 +43,10 @@
      easing="linear"
    ></a-animation></a-entity>
 </a-entity>
-<a-text value="audi r8" color="white" width="15" position="21.23 3.5 21.23" align="center"></a-text>
-<a-text value="cost:30,00,000" color="red" width="10" position="21.23 3 21.23" align="center"></a-text>
-<a-text value="mileage:20" color="red" width="10" position="21.23 2.5 21.23" align="center"></a-text>
-<a-entity obj-model="obj:#car3;mtl:#car3-mtl" size="2" position="21.23 0 21.23" rotation="0 45 0" color="#4CC3D9">
+<a-text value="audi r8" color="white" width="15" position="9.5 3.5 9.5" align="center"></a-text>
+<a-text value="cost:30CR" color="red" width="10" position="9.5 3 9.5" align="center"></a-text>
+<a-text value="mileage:20" color="red" width="10" position="9.5 2.5 9.5" align="center"></a-text>
+<a-entity obj-model="obj:#car3;mtl:#car3-mtl" size="2" position="9.5 -0.02 9.5" rotation="0 45 0" color="#4CC3D9">
 <a-animation
     attribute="rotation"
      dur="10000"
@@ -53,10 +56,10 @@
      easing="linear"
    ></a-animation></a-entity>
 </a-entity>
-<a-text value="audi" color="white" width="15" position="-21.23 3.5 -21.23" align="center"></a-text>
-<a-text value="cost:25,00,000" color="red" width="10" position="-21.23 3 -21.23" align="center"></a-text>
-<a-text value="mileage:18" color="red" width="10" position="-21.23 2.5 -21.23" align="center"></a-text>
-<a-entity obj-model="obj:#car4;mtl:#car4-mtl" size="2" position="-21.23 0 -21.23" rotation="0 45 0" color="#4CC3D9"><a-animation
+<a-text value="audi" color="white" width="15" position="-9.5 3.5 -9.5" align="center"></a-text>
+<a-text value="cost:25CR" color="red" width="10" position="-9.5 3 -9.5" align="center"></a-text>
+<a-text value="mileage:18" color="red" width="10" position="-9.5 2.5 -9.5" align="center"></a-text>
+<a-entity obj-model="obj:#car4;mtl:#car4-mtl" size="2" position="-9.5 -0.02 -9.5" rotation="0 45 0" color="#4CC3D9"><a-animation
     attribute="rotation"
      dur="10000"
      fill="forwards"
@@ -65,7 +68,15 @@
      easing="linear"
    ></a-animation></a-entity>
 </a-entity>
-     <a-plane position="0 0 0" rotation="-90 0 0" width="35" height="35" color="#7BC8A4"></a-plane>
+</a-entity>
+     <a-plane position="0 20 0" rotation="90 0 0" width="30" height="30" opacity="0.5" color="#7BC8A4"></a-plane>
+<a-plane position="15 10 0" rotation="0 -90 0" width="30" height="20" opacity="0.5" color="#7BC8A4"></a-plane>
+<a-plane position="0 0 0" rotation="-90 0 0" width="30" height="30" opacity="1.0" src="floor.jpg"></a-plane>
+<a-plane position="-15 10 0" rotation="0 90 0" width="30" height="20" opacity="0.5" color="#7BC8A4"></a-plane>
+<a-plane position="0 10 15" rotation="180 0 0" width="30" height="20" opacity="0.5" color="#7BC8A4"></a-plane>
+<a-plane position="0 10 -15" rotation="0 0 180" width="30" height="20" opacity="0.5" color="#7BC8A4"></a-plane>
+<a-sky src="sky.jpeg"></a-sky>
+
           </a-scene>
 
   </body>
